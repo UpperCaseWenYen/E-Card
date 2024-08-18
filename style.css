@@ -40,7 +40,7 @@ body {
     left: 50%;
     font-size: 12px; /* Smaller font size */
     line-height: 1.4;
-    
+    overflow-y: auto;
 }
 .outside {
     -webkit-transform-style: preserve-3d;
