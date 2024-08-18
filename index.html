@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Birthday Card</title>
+    <title>HAPPY BIRTHDAY AMELIA</title>
     <!-- Google Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="card">
-      <div class="outside">
-        <div class="front">
-          <p>Happy 20th Birthday Amelia!</p>
-          <div class="cake">
-            <div class="top-layer"></div>
-            <div class="middle-layer"></div>
-            <div class="bottom-layer"></div>
-            <div class="candle"></div>
-          </div>
+</head>
+<body>
+    <div class="card" id="birthdayCard">
+        <div class="outside">
+            <div class="front">
+                <p>Happy 20th Birthday Amelia!</p>
+                <div class="cake">
+                    <div class="top-layer"></div>
+                    <div class="middle-layer"></div>
+                    <div class="bottom-layer"></div>
+                    <div class="candle"></div>
+                </div>
+            </div>
+            <div class="middle">
+                <img src="joke.png" alt="Birthday Celebration" />
+            </div>
         </div>
-        <div class="back"></div>
-      </div>
-      <div class="inside">
-        <p>Wishing you a very happy year ahead&#127874; </p>
-        <h1>&#127873;</h1>
-      </div>
+        <div class="inside">
+            <p class="note">
+                Dear Amelia,<br><br>
+                Hope this e-card surprises you, haha. I thought it would be a fun, quirky way to send a birthday wish, especially since I picked up a few things from being in Computer Science. It’s a bit of a downer that I can’t treat you to a fun activity for your birthday, but I hope this note brings a small, fond memory of your special day.<br><br>
+                I’m so glad to see you making the most of your time before the semester starts to play hard after you worked hard for your journey to get into Oxford. Man, how do you manage through all that stress and push through like that, it is just mind-blowing.<br><br>
+                It’s a relief to see that you’re still as positive as ever after everything you’ve been through. Please remember to take care of yourself while you’re in the UK. I sincerely believe nothing can be more important than one's health. So I hope you remember to eat right, hydrate, and go take that walk around campus when you can :)<br><br>
+                Regards,<br>
+                Wen Yen.
+
+            </p>
+        </div>
+       
+          
+     
     </div>
-  </body>
+
+    <script>
+        document.getElementById('birthdayCard').addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    </script>
+</body>
 </html>
